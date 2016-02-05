@@ -91,7 +91,7 @@ public class ClientProcess implements Runnable {
                 ID.add(x);
             }
             
-            keluaranWriter.write(""+param[1]);
+            keluaranWriter.write("Sudah tercatat ID "+param[1]);
             System.out.println("ID."+param[1]);
             keluaranWriter.newLine();
             keluaranWriter.flush();
@@ -108,6 +108,7 @@ public class ClientProcess implements Runnable {
             if(x!=null){
                 keluaran=x.getInformasi(param[2],param[3]);
             }
+            
             if(keluaran == null){
                 keluaran = "Error...";
             }
